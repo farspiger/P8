@@ -1,0 +1,58 @@
+<?php
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ * Description of newPHPClass
+ *
+ * @author evartoffel
+ */
+class customerClass {
+    //put your code here
+public $name;
+public $address;
+public $phone;
+public $CVR;
+public $type;
+public $orders;
+public $comment;
+
+public function __construct($name='',$address='',$phone='',$CVR='',$type='Business',$orders='',$comment='prefer red wine') {
+   // here should connect to the sql database
+    $this->name=$name  ;
+    $this->address=$address;
+    $this->phone=$phone;
+    $this->CVR=$CVR;
+    $this->type=$type;
+    $this->orders=$orders;
+    $this->comment=$comment;
+}
+
+public function show(){
+    echo "Customer called".$this->name."lives in".$this->address.",Phone number:".$this->phone.",Type:".$this->type.",Click to see orders:"
+            .$this->orders.",Comment:".$this->comment;
+}
+
+public function getName($name) {
+    echo 'Looked for'.$name."<br />";
+    return $this->name;
+}
+
+public function __set($name,$value){
+    switch ($name) {
+        case "name":
+            $this->name=$value;
+            break;
+        case "address":
+            $this->address=$value;
+            break;
+        //also the other attributes
+    }
+}
+}
+
+
