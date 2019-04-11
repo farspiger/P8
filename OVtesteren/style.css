@@ -1,0 +1,253 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+/*OV-kode herfra
+Red: #BD5E45
+Purple: #655E7F
+Green: #76937F
+*/
+* {
+  text-decoration: none; /*styles everything *, to avoid underlining etc.*/
+}
+
+body {
+  background-color: #BD5E45;
+}
+
+header {
+  background-color: #655E7F;
+  width: 100%;
+  height: 100px;
+}
+
+header .header-logo {
+  font-family: Arial;
+  font-size: 24px;
+  font-weight: 900;
+  color: #111;
+  text-transform: uppercase;
+  display: block;         /* links as block elements are easier to style*/
+  margin: 0 auto;         /*to center the block ^^: 0 auto*/
+  text-align: center;
+  padding: 20px 0;        /*20px from top and bottom - 0 from the left/right */
+}
+
+header nav ul {          /*styles entire navigation part*/
+  display: block;        /*added because margin didn't affecet text*/
+  margin: 0 auto;        /*0px from top-bottom, auto-adjust left-right*/
+  width: fit-content;
+}
+
+header nav ul li {
+  display: inline-block;  /*lists blocks next to each other next to each other legacy-elements*/
+  float: left;            /*floats elements inside the li ul nav header elemtents left, inline-block does the same, but floats removes spaces between links to avoid empty space*/
+  list-style: none;       /*to avoid default bullet-tags set to none*/
+  padding: 0 16px;        /*0 for top-bottom, 16px for left-right*/
+}
+
+header nav ul li a {      /*a link inside a LI within a UL within the nav inside a header a -> li -> ul -> nav, so it looks for this specific type of link to style*/
+  font-family: Arial;
+  font-size: 16px;
+  color: #111;
+}
+
+header .header-cases {
+  display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+
+  header .header-logo {
+    margin: 31px 0;              /*for computers*/
+    text-align: left;
+    padding: 0px 20px 0px 40px;        /**/
+    border-right: 3px solid #111;
+    line-height: 38px;
+    float: left;
+}
+
+.index-links div {
+  margin: 16px 16px 0;      /*16 from top-bottom 16 from left-right 0 from the bottom to avoid ugly spaces*/
+  width: calc(100% - 32px); /*double the above margin ^*/
+  height: 100px;
+  background-color: #f2f2f2;
+}
+
+.index-links div h3 {       /*style the h3 tags inside the divs inside the index-links class section*/
+  font-family: Catamaran;
+  font-size: 28px;
+  font-weight: 600;
+  font-style: bold;
+  line-height: 100px;       /*centers text in nav-buttons need to be same size as "box height"*/
+  color: #111;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+header nav ul {                     /*styles entire navigation part*/
+  margin: 20px 0px 0px 20px;        /*0px from top-bottom, auto-adjust left-right*/
+  float: left;                      /*to position next to logo*/
+}
+
+header nav ul li a {                /*a link inside a LI within a UL within the nav inside a header a -> li -> ul -> nav, so it looks for this specific type of link to style*/
+  line-height: 60px;
+  text-transform: uppercase;
+}
+
+} /*@media slutter her*/
+
+.logo {
+  display: inline-block;
+  height: 15px;
+  width: 80px;
+  list-style: none;
+  float: left;
+}
+
+.logo img {
+  width: 60px;
+  float: left;
+
+}
+
+.index-links div {
+  margin: 16px 16px 0;      /*16 from top-bottom 16 from left-right 0 from the bottom to avoid ugly spaces*/
+  width: calc(100% - 32px); /*double the above margin ^*/
+  height: 100px;
+  background-color: #f2f2f2;
+}
+
+.index-links div h3 {       /*style the h3 tags inside the divs inside the index-links class section*/
+  font-family: Catamaran;
+  font-size: 28px;
+  font-weight: 600;
+  font-style: bold;
+  line-height: 100px;       /*centers text in nav-buttons need to be same size as "box height"*/
+  color: #111;
+  text-align: center;
+  text-transform: uppercase;
+  /*text-shadow: 2px 2px 8px #111; */  /*shadow*/
+}
+
+@media only screen and (min-width: 1000px) {
+.wrapper{
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.index-links div {
+  margin: 15px 10px 0;
+  height: 230px;
+  background-color: #f2f2f2;
+  float: left;
+
+}
+
+.index-square {
+  width: calc(50% - 20px) !important;
+}
+
+.index-links div h3 {       /*style the h3 tags inside the divs inside the index-links class section*/
+  font-family: Catamaran;
+  font-size: 28px;
+  font-weight: 600;
+  font-style: bold;
+  line-height: 230px;       /*centers text in nav-buttons need to be same size as "box height"*/
+  color: #111;
+  text-align: center;
+  text-transform: uppercase;
+  /*text-shadow: 2px 2px 8px #111; */  /*shadow*/
+}
+
+}
