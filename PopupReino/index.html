@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <!-- jQuery include -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  <!-- jQuery Modal include -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+  <!-- modal css/reino style -->
+  <link rel="stylesheet" href="modalstyle.css">
+  <title>Popup</title>
+</head>
+
+<body>
+
+  <div id="ex1" class="modal">
+
+    <div class="addwinelabel">
+      <p>Edit Wine</p>
+    </div>
+
+    <select class="dropdown" name="dropdown">
+      <option id="option1" value="">Affe</option>
+      <option id="option1" value="">Affe</option>
+      <option id="option1" value=""></option>
+      <option id="option1" value=""></option>
+      <option id="option1" value=""></option>
+      <option id="option1" value=""></option>
+      <option id="option1" value=""></option>
+      <option id="option1" value=""></option>
+    </select>
+
+    <form class=".addform" action="index.html" method="post">
+
+      <div class="labels">
+        <p>Name</p>
+      </div>
+      <input type="text" name="cuvee" placeholder="<insert text here>">
+
+      <div class="labels">
+        <p>Supplier</p>
+      </div>
+      <input type="text" name="vintage" placeholder="<insert text here>">
+
+      <div class="labels">
+        <p>Region</p>
+      </div>
+      <input type="text" name="year" placeholder="<insert text here>">
+
+      <div class="labels">
+        <p>Country</p>
+      </div>
+      <input type="text" name="price" placeholder="<insert text here>">
+
+      <div class="labels">
+        <p>Vintage</p>
+      </div>
+      <input type="text" name="quantity" placeholder="<insert text here>">
+
+      <div class="labels">
+        <p>Grape</p>
+      </div>
+      <input type="text" name="quantity" placeholder="<insert text here>">
+
+      <div class="labels">
+        <p>Alcohol %</p>
+      </div>
+      <input type="text" name="quantity" placeholder="<insert text here>">
+
+      <div class="labels">
+        <p>Price</p>
+      </div>
+      <input type="text" name="quantity" placeholder="<insert text here>">
+    </form>
+
+    <div class="">
+      <input type="submit" class="addeditbtn" name="add" value="Edit">
+    </div>
+
+    <div>
+      <input type="submit" class="cancelbtn" name="cancel" value="Cancel">
+    </div>
+    <a href="#" rel="modal:close"></a>
+  </div>
+
+  <div id="ex2" class="modal">
+
+    <div class="addwinelabel">
+      <p>Add Wine</p>
+    </div>
+
+    <select class="dropdown" name="dropdown">
+      <option id="option1" value="">Affe</option>
+      <option id="option1" value="">Affe</option>
+      <option id="option1" value=""></option>
+      <option id="option1" value=""></option>
+      <option id="option1" value=""></option>
+      <option id="option1" value=""></option>
+      <option id="option1" value=""></option>
+      <option id="option1" value=""></option>
+    </select>
+
+    <form class=".addform" action="index.html" method="post">
+
+      <div class="labels">
+        <p>Name</p>
+      </div>
+      <input type="text" name="cuvee" placeholder="<insert text here>">
+
+      <div class="labels">
+        <p>Supplier</p>
+      </div>
+      <input type="text" name="vintage" placeholder="<insert text here>">
+
+      <div class="labels">
+        <p>Region</p>
+      </div>
+      <input type="text" name="year" placeholder="<insert text here>">
+
+      <div class="labels">
+        <p>Country</p>
+      </div>
+      <input type="text" name="price" placeholder="<insert text here>">
+
+      <div class="labels">
+        <p>Vintage</p>
+      </div>
+      <input type="text" name="quantity" placeholder="<insert text here>">
+
+      <div class="labels">
+        <p>Grape</p>
+      </div>
+      <input type="text" name="quantity" placeholder="<insert text here>">
+
+      <div class="labels">
+        <p>Alcohol %</p>
+      </div>
+      <input type="text" name="quantity" placeholder="<insert text here>">
+
+      <div class="labels">
+        <p>Price</p>
+      </div>
+      <input type="text" name="quantity" placeholder="<insert text here>">
+    </form>
+
+    <div class="">
+      <input type="submit" class="addeditbtn" name="add" value="Add">
+    </div>
+
+    <div>
+      <input type="submit" class="cancelbtn" name="cancel" value="Cancel">
+    </div>
+
+  </div>
+
+  <p><a href="#ex1" rel="modal:open">Edit</a></p>
+  <p><a href="#ex2" rel="modal:open">Add</a></p>
+
+</body>
+
+</html>

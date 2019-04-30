@@ -1,0 +1,228 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+/*OV-kode herfra
+Red: #BD5E45
+Purple: #655E7F
+Green: #76937F
+Lysegrå: #D3D3D3
+*/
+.modal {
+  background-color: #eff2f7;
+  width: 100%;
+  margin: 0 auto;
+  height: 550px;
+}
+
+.dropdown {
+  position: relative;
+  width: 200px;
+  float: top;
+  margin-bottom: 5px;
+  margin-top: 20px;
+  margin-left: 225px;
+  height: 30px;
+  border-radius: 5px;
+  border-style: none;
+}
+
+/*input[type=submit] {
+  width: 100px;
+  background-color: #eff2f7;
+  color: #5f6874;
+  padding: 10px;
+  margin: 15px;
+  border-style: 0.01px;
+  border-color: #111111;
+  border-radius: 5px;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  float: right;
+}
+*/
+.addeditbtn {
+  background-color: #47525e;
+  color: white;
+  width: 100px;
+  padding: 11px;
+  margin-top: 55px;
+  margin-right: 17px;
+  border-style: none;
+  border-radius: 5px;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  float: right;
+}
+
+.cancelbtn {
+  width: 100px;
+  background-color: #eff2f7;
+  color: #5f6874;
+  padding: 10px;
+  margin-top: 55px;
+  margin-right: 17px;
+  border-width: thin;
+  border-color: #111111;
+  border-radius: 5px;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  float: right;
+}
+
+/*input[type=submit]:hover {
+  background-color: #47525e;
+  color: white;
+}
+*/
+.addwinelabel {
+  display: block;
+  margin: 0 auto 20px auto;
+  padding: 10px;
+  background-color: #F93345;
+  width: 120px;
+  height: 20px;
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: bold;
+  line-height: 20px;
+  /*centers text same size as "box height"*/
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+.addwinelabel p {
+  color: #fff;
+}
+
+.labels {
+  display: block;
+  margin: 2px;
+  width: 70px;
+  padding: 10px;
+  height: 10px;
+  text-align: center;
+  float: left;
+  border-radius: 5px;
+  background-color: #dbe1e7;
+}
+
+.labels p {
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: 600;
+  font-style: bold;
+  line-height: 10px;
+  color: #5f6874;
+}
+
+input[type=text] {
+  width: 70%;
+  float: left;
+  display: block;
+  margin: 2px;
+  padding: 10px;
+  height: 10px;
+  border-radius: 5px;
+  border-style: none;
+}
+
+::placeholder {
+  color: #a7acb1;
+}
